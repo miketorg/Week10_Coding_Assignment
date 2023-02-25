@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Slip</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body class="container">
+        <br>
+        <h1>Weight Slip</h1>
+        <div class="card">
+            <br>
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="form-group">
+                        <label for="ticketNum">Ticket #</label>
+                        <input type="text" class="form-control" id="ticketNum">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="driver">Driver Name</label>
+                        <input type="text" class="form-control" id="driver">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="form-group">
+                        <label for="truckId">Truck ID</label>
+                        <input type="text" class="form-control" id="truckId">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="form-group">
+                        <label for="gross">Gross</label>
+                        <input type="number" class="form-control" id="gross">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="form-group">
+                        <label for="tare">Tare</label>
+                        <input type="number" class="form-control" id="tare"> 
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="form-group">
+                        <label for="bales">Bales</label>
+                        <input type="number" class="form-control" id="bale"> 
+                    </div>
+                </div>
+                <div class="col-sm-1"><br>
+                    <button id="add" class="btn btn-primary">Add</button>
+                    </div>
+            </div>
+            <div class="row">
+               <br>
+            </div>  
+        </div>
+        <table id="list" class="table table-light table-striped">
+            <tr>
+                <th>Date</th>
+                <th>Ticket#</th>
+                <th>Driver</th>
+                <th>Truck ID</th>
+                <th>Gross</th>
+                <th>Tare</th>
+                <th>Net</th>
+                <th>Tons</th>
+                <th>Bales</th>
+                
+            </tr>
+        </table>
+
+    <script src="weight.js"></script>    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
